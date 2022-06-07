@@ -1,5 +1,5 @@
 {% set name = "dvc-objects" %}
-{% set version = "0.0.2" %}
+{% set version = "0.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 65370e3ea83b4c4b2ad8567ef8aa79b5b4c0fc2b3a4ff6ea2290ca64a65c6fcf
+  sha256: 1a24e643a51d667752174f63d1a88c680d9ad447073a4b47548823d73937ca80
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 2
+  number: 0
 
 requirements:
   host:
@@ -40,7 +40,7 @@ test:
 
 about:
   home: https://github.com/iterative/dvc-objects
-  summary: 'Library for generic objects used in DVC'
+  summary: Library for generic objects used in DVC
   license: Apache-2.0
   license_file: LICENSE
 
