@@ -1,5 +1,5 @@
 {% set name = "dvc-objects" %}
-{% set version = "0.0.5" %}
+{% set version = "0.0.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: eb0101e3e942f3eb648d4a10448b92c30616f4fdd6c626bc1397761b18e98d02
+  sha256: 48e8b41d426b2514907a33607bc7439ab7ecb0c363d0fb1acf5a598612264904
 
 build:
   noarch: python
@@ -21,14 +21,12 @@ requirements:
     - setuptools_scm >=6.3.1
   run:
     - python >=3.8
-    - nanotime >=0.5.2
     - funcy >=1.14
     - shortuuid >=0.5.0
     - tqdm >=4.63.1,<5
     - flatten-dict >=0.4.1,<1
     - typing_extensions >=3.7.4
     - fsspec >=2021.10.1
-    - diskcache >=5.2.1
 
 test:
   imports:
