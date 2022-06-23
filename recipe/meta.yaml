@@ -27,6 +27,7 @@ requirements:
     - flatten-dict >=0.4.1,<1
     - typing_extensions >=3.7.4
     - fsspec >=2021.10.1
+    - pygtrie>=2.3.2
 
 test:
   imports:
