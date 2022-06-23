@@ -1,5 +1,5 @@
 {% set name = "dvc-objects" %}
-{% set version = "0.0.12" %}
+{% set version = "0.0.13" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c2aa6560ade3a984347cb8acbd9fab879e05db821e8d5eb13b7b995e435ffcda
+  sha256: 5afac3c6bbaf9b51765f92f346c54aeb26b0cd3848d02017a953960b83aa790f
 
 build:
   noarch: python
@@ -27,6 +27,7 @@ requirements:
     - flatten-dict >=0.4.1,<1
     - typing_extensions >=3.7.4
     - fsspec >=2021.10.1
+    - pygtrie >=2.3.2
 
 test:
   imports:
