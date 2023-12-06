@@ -1,5 +1,5 @@
 {% set name = "dvc-objects" %}
-{% set version = "1.4.5" %}
+{% set version = "1.4.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b61948d81f7588f31fda6142cbda2d931ea59a396a0f7fedf6a72e39d2399e96
+  sha256: ea9df6efd52a71e8a7725b0786966ee3d88e14649ec63ca328951827100bc331
 
 build:
   noarch: python
