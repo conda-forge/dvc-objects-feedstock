@@ -21,12 +21,8 @@ requirements:
     - setuptools_scm >=6.3.1
   run:
     - python >=3.8
-    - funcy >=1.14
-    - shortuuid >=0.5.0
-    - tqdm >=4.63.1,<5
-    - typing_extensions >=3.7.4
+    - funcy >=1.14 # [py<312]
     - fsspec >=2022.10.0
-    - packaging >=19
 
 test:
   imports:
